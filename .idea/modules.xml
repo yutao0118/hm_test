@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hm-mall/feign-api/feign-api.iml" filepath="$PROJECT_DIR$/hm-mall/feign-api/feign-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hm-mall/gateway/gateway.iml" filepath="$PROJECT_DIR$/hm-mall/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hm-mall/hamll-parent.iml" filepath="$PROJECT_DIR$/hm-mall/hamll-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hm-mall/item-service/item-service.iml" filepath="$PROJECT_DIR$/hm-mall/item-service/item-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hm-mall/order-service/order-service.iml" filepath="$PROJECT_DIR$/hm-mall/order-service/order-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hm-mall/search-service/search-service.iml" filepath="$PROJECT_DIR$/hm-mall/search-service/search-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hm-mall/user-service/user-service.iml" filepath="$PROJECT_DIR$/hm-mall/user-service/user-service.iml" />
+    </modules>
+  </component>
+</project>

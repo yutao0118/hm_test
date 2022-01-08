@@ -1,0 +1,44 @@
+server:
+  port: 10010
+spring:
+  application:
+    name: gateway
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+    gateway:
+      routes:
+        - id: itemservice
+          uri: lb://itemservice
+          predicates:
+            - Path=/item/**
+        - id: orderservice
+          uri: lb://orderservice
+          predicates:
+            - Path=/order/**,/pay/**
+        - id: userservice
+          uri: lb://userservice
+          predicates:
+            - Path=/user/**,/address/**
+        - id: searchservice
+          uri: lb://searchservice
+          predicates:
+            - Path=/search/**
+      default-filters:
+        - AddRequestHeader=authorization , 2
+      globalcors:
+        add-to-simple-url-handler-mapping: true
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "http://localhost:9001"
+              - "http://localhost:9002"
+            allowedMethods:
+              - "GET"
+              - "POST"
+              - "DELETE"
+              - "PUT"
+              - "OPTIONS"
+            allowedHeaders: "*"
+            allowCredentials: true
+            maxAge: 360000
